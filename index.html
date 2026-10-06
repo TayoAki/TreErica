@@ -10,7 +10,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232B2B2B'/%3E%3Cpath d='M18 33l9 9 19-20' fill='none' stroke='%23F3EEE5' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#F7F5F0;
@@ -27,6 +27,8 @@
   --cream:#F3EEE5;
   --cream-2:#E8E1D4;
   --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --serif:"Fraunces",Georgia,serif;
+  --hl:#EAE2D3;
   --wrap:1200px;
   --r:20px;
 }
@@ -71,7 +73,7 @@ section{padding:120px 0}
 .nav-links a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
 
 /* hero */
-.hero{text-align:center;padding:120px 0 110px}
+.hero{text-align:center;padding:120px 0 80px}
 .hero h1{font-size:clamp(44px,7.2vw,88px);max-width:1000px;margin:0 auto 28px;letter-spacing:-.03em;line-height:1.05}
 .hero .lede{max-width:680px;margin:0 auto}
 .stats{display:flex;justify-content:center;gap:56px;flex-wrap:wrap;margin:48px auto 52px}
@@ -80,7 +82,7 @@ section{padding:120px 0}
 .hero-note{margin-top:22px;font-size:15px;color:var(--soft)}
 
 /* tools strip */
-.tools{background:var(--band);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.tools{background:var(--band);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:96px}
 .tools-inner{display:flex;align-items:center;gap:40px;height:104px}
 .tools .eyebrow{flex:none;font-size:12px}
 .marquee{flex:1;display:flex;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
@@ -231,7 +233,7 @@ section{padding:120px 0}
 .copy:hover{background:#474747}
 
 /* footer */
-footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
+footer{background:#161616;color:#A8A39A;padding:96px 0 0;overflow:hidden}
 .ft{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
 .ft .lead p{color:#A8A39A;font-size:16px}
 .ft .lead p.big{color:var(--cream);font-size:22px;line-height:1.4;margin:6px 0 30px;max-width:380px}
@@ -242,6 +244,29 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
 .ft-bottom{margin-top:80px;padding-top:32px;border-top:1px solid #2E2E2E;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:15px}
 .ft-bottom .brand{color:var(--cream)}
 .ft-bottom .brand-mark{background:var(--cream)}
+
+
+/* ---- Echos accents layered on the LeftClick base ---- */
+.hl{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:-.01em;background:var(--hl);color:var(--ink);border-radius:.18em;padding:0 .18em .04em;display:inline-block;line-height:1.05}
+.dark .hl,.cta .hl,.stage-hl{background:rgba(243,238,229,.12);color:var(--cream);box-shadow:inset 0 0 0 1.5px rgba(243,238,229,.28)}
+.head .eyebrow,.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px 7px 12px;color:var(--ink);font-size:13px;letter-spacing:.1em}
+.head .eyebrow svg,.badge svg{color:var(--dark)}
+.dark .head .eyebrow{background:#2A2A2A;border-color:#3A3A3A;color:var(--cream)}
+.dark .head .eyebrow svg{color:var(--cream)}
+.divider{position:relative;height:1px;background:var(--line);max-width:var(--wrap);margin:0 auto}
+.divider span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--bg);padding:0 22px;display:flex;gap:12px;align-items:center;color:#C8BBA6}
+.stage-wrap{padding:0 24px}
+.stage{position:relative;max-width:1240px;margin:0 auto;background:var(--dark);border-radius:32px;overflow:hidden;box-shadow:0 40px 80px -50px rgba(0,0,0,.6)}
+.stage::before{content:none;position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:120px 120px;mask-image:radial-gradient(ellipse at 50% 20%,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 20%,#000 30%,transparent 75%)}
+.stage video{position:relative;width:100%;height:auto;display:block;aspect-ratio:5/3;background:var(--dark)}
+.stage-cap{position:absolute;z-index:2;top:20px;left:32px;right:32px;display:flex;justify-content:space-between;gap:16px;color:#B3ADA3;font-size:15px}
+.stage-cap b{color:var(--cream);font-weight:500}
+.dots{background-image:radial-gradient(rgba(243,238,229,.10) 1px,transparent 1px);background-size:12px 12px}
+.step-pill{display:inline-block;background:var(--dark);color:var(--cream);font-size:12px;letter-spacing:.1em;border-radius:8px;padding:5px 10px;margin-bottom:22px}
+.card{transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 24px 40px -30px rgba(0,0,0,.35)}
+.wordmark{font-weight:600;letter-spacing:-.05em;font-size:clamp(90px,22vw,320px);line-height:.8;text-align:center;margin-top:56px;background:linear-gradient(180deg,rgba(243,238,229,.13),rgba(243,238,229,0) 85%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none;white-space:nowrap;overflow:hidden}
+@media (max-width:620px){.stage{border-radius:18px}.stage-wrap{padding:0 12px}.stage-cap{display:none}}
 
 /* reveal */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
@@ -313,7 +338,7 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <!-- HERO -->
   <header class="hero">
     <div class="wrap">
-      <h1 class="reveal">You lead the vision.<br>I keep it moving.</h1>
+      <h1 class="reveal">You lead the vision.<br>I keep it <span class="hl">moving.</span></h1>
       <p class="lede reveal">Fractional executive assistant and project support for founders with too much in motion. Calendar, logistics, vendors, events, and the projects that keep landing back on your plate.</p>
       <div class="stats reveal">
         <div class="stat"><b>5+ yrs</b><span>supporting founders</span></div>
@@ -325,6 +350,17 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
       <p class="hero-note reveal">Free 30-minute call · Remote-friendly, Atlanta-based</p>
     </div>
   </header>
+
+  <!-- HERO STAGE (Remotion animation) -->
+  <div class="stage-wrap reveal">
+    <div class="stage">
+      <div class="stage-cap"><span><b>A Monday with Tre</b> · the week, briefed before your first meeting</span><span>Illustrative sample</span></div>
+      <video autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-label="Animated illustrative sample: a Monday morning briefing with meetings, open loops, and completed hand-offs">
+        <source src="assets/hero.webm" type="video/webm">
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
 
   <!-- TOOLS -->
   <div class="tools" aria-label="Tools Tre works in">
@@ -338,8 +374,8 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <section>
     <div class="wrap split">
       <div class="reveal">
-        <span class="eyebrow">How I work</span>
-        <h2 style="margin-top:18px">Hand me an outcome, not an instruction manual.</h2>
+        <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>How I work</span>
+        <h2 style="margin-top:18px">Hand me an <span class="hl">outcome</span>, not an instruction manual.</h2>
         <p class="lede">You don't need another person to assign tasks to. You need someone who can take the moving pieces, organize them, and keep them moving. You stay focused on the business. I handle what's underneath it.</p>
         <ol class="steps3">
           <li><span class="n">01</span><div><b>Figure it out</b><span>Research, source, compare, ask the right questions, find the answer.</span></div></li>
@@ -362,8 +398,8 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <section class="band">
     <div class="wrap">
       <div class="head reveal">
-        <span class="eyebrow">Sound familiar?</span>
-        <h2>When founders call me in.</h2>
+        <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Sound familiar?</span>
+        <h2>When founders <span class="hl">call me in.</span></h2>
         <p class="lede">I work best with founders who have a lot going on at once and need a proactive right hand, not another person to manage.</p>
       </div>
       <div class="grid g4">
@@ -379,8 +415,8 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <section id="services">
     <div class="wrap">
       <div class="head reveal">
-        <span class="eyebrow">Ways to work together</span>
-        <h2>Three ways to hand it off.</h2>
+        <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>Ways to work together</span>
+        <h2>Three ways to <span class="hl">hand it off.</span></h2>
         <p class="lede">One promise, proactive ownership, in the shape that fits what's on your plate right now.</p>
       </div>
       <div class="grid g3">
@@ -397,7 +433,7 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
           </ul>
           <p class="meta"><b>Defined monthly capacity</b>Set together on our first call</p>
         </article>
-        <article class="card offer featured reveal">
+        <article class="card offer featured dots reveal">
           <div class="icon-tile" style="background:#3A3A3A;color:var(--cream)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l10 5-10 5L2 7l10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
           <span class="eyebrow">Option 02 · Most complete</span>
           <h3>Executive + Project Support</h3>
@@ -433,8 +469,8 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <section class="band">
     <div class="wrap">
       <div class="head reveal">
-        <span class="eyebrow">Scope</span>
-        <h2>What you can hand me.</h2>
+        <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Scope</span>
+        <h2>What you can <span class="hl">hand me.</span></h2>
         <p class="lede">The daily load, the one-off work with no template, and the recurring processes that keep things from slipping.</p>
       </div>
       <div class="grid g3">
@@ -452,14 +488,14 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <section class="dark">
     <div class="wrap">
       <div class="head reveal">
-        <span class="eyebrow" style="color:#8F8A82">Approach</span>
-        <h2>I don't just assist. I take ownership.</h2>
+        <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg>Approach</span>
+        <h2>I don't just assist. I take <span class="hl">ownership.</span></h2>
         <p class="lede">If I own it, I follow it through. You always know where something stands, what's next, and what needs you.</p>
       </div>
       <div class="grid g3">
-        <article class="card reveal"><span class="eyebrow">01</span><h3>I notice.</h3><ul><li>The email that needs a response.</li><li>The vendor who hasn't followed up.</li><li>The deadline that's getting too close.</li></ul></article>
-        <article class="card reveal"><span class="eyebrow">02</span><h3>I think ahead.</h3><ul><li>What will you need to make this decision?</li><li>What's likely to hold this project up?</li><li>What can I solve without adding to your plate?</li></ul></article>
-        <article class="card reveal"><span class="eyebrow">03</span><h3>I close the loop.</h3><ul><li>I confirm it landed instead of assuming it did.</li><li>Nothing sits waiting on me.</li><li>You get a brief, not a stream of questions.</li></ul></article>
+        <article class="card dots reveal"><span class="eyebrow">01</span><h3>I notice.</h3><ul><li>The email that needs a response.</li><li>The vendor who hasn't followed up.</li><li>The deadline that's getting too close.</li></ul></article>
+        <article class="card dots reveal"><span class="eyebrow">02</span><h3>I think ahead.</h3><ul><li>What will you need to make this decision?</li><li>What's likely to hold this project up?</li><li>What can I solve without adding to your plate?</li></ul></article>
+        <article class="card dots reveal"><span class="eyebrow">03</span><h3>I close the loop.</h3><ul><li>I confirm it landed instead of assuming it did.</li><li>Nothing sits waiting on me.</li><li>You get a brief, not a stream of questions.</li></ul></article>
       </div>
     </div>
   </section>
@@ -468,8 +504,8 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <section id="work">
     <div class="wrap">
       <div class="head reveal">
-        <span class="eyebrow">Proof</span>
-        <h2>What the work actually looks like.</h2>
+        <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Proof</span>
+        <h2>What the work <span class="hl">actually looks like.</span></h2>
         <p class="lede">Two real situations first, then a few illustrative samples of how I format and think through a hand-off.</p>
       </div>
       <div class="grid g2">
@@ -557,26 +593,27 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <section id="process" class="band">
     <div class="wrap">
       <div class="head reveal">
-        <span class="eyebrow">Process</span>
-        <h2>From first call to first hand-off.</h2>
+        <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg>Process</span>
+        <h2>From first call to <span class="hl">first hand-off.</span></h2>
         <p class="lede">No long onboarding. A clear scope, the right access, and a rhythm you can count on.</p>
       </div>
       <div class="grid g4">
-        <article class="card step reveal"><span class="eyebrow">Step 01</span><h3>Discovery call</h3><p>A free 30-minute call on what's on your plate, what keeps slipping, and what you'd hand off first.</p><p class="out">You leave with a short list of first delegations.</p></article>
-        <article class="card step reveal"><span class="eyebrow">Step 02</span><h3>Scope</h3><p>Which option fits, monthly capacity, response times, communication channels, and what needs your approval.</p><p class="out">You get a written scope before anything starts.</p></article>
-        <article class="card step reveal"><span class="eyebrow">Step 03</span><h3>Access &amp; setup</h3><p>Calendar, inbox, and tool access set up with the permissions you choose, and nothing more.</p><p class="out">Sensitive information handled with care, by default.</p></article>
-        <article class="card step reveal"><span class="eyebrow">Step 04</span><h3>Rhythm</h3><p>A predictable check-in cadence, a running list of open loops, and a brief so you're never chasing me.</p><p class="out">You always know where everything stands.</p></article>
+        <article class="card step reveal"><span class="step-pill">STEP 01</span><h3>Discovery call</h3><p>A free 30-minute call on what's on your plate, what keeps slipping, and what you'd hand off first.</p><p class="out">You leave with a short list of first delegations.</p></article>
+        <article class="card step reveal"><span class="step-pill">STEP 02</span><h3>Scope</h3><p>Which option fits, monthly capacity, response times, communication channels, and what needs your approval.</p><p class="out">You get a written scope before anything starts.</p></article>
+        <article class="card step reveal"><span class="step-pill">STEP 03</span><h3>Access &amp; setup</h3><p>Calendar, inbox, and tool access set up with the permissions you choose, and nothing more.</p><p class="out">Sensitive information handled with care, by default.</p></article>
+        <article class="card step reveal"><span class="step-pill">STEP 04</span><h3>Rhythm</h3><p>A predictable check-in cadence, a running list of open loops, and a brief so you're never chasing me.</p><p class="out">You always know where everything stands.</p></article>
       </div>
     </div>
   </section>
 
+  <div class="divider" aria-hidden="true"><span><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
   <!-- ABOUT -->
   <section id="about">
     <div class="wrap about">
       <div class="portrait reveal"><span>TW</span><small>Photo coming soon</small></div>
       <div class="reveal">
-        <span class="eyebrow">About</span>
-        <h2 style="margin-top:18px">Tre'Erica Wallace</h2>
+        <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>About</span>
+        <h2 style="margin-top:18px">Tre'<span class="hl">Erica</span> Wallace</h2>
         <p class="role-line">Fractional Executive Assistant &amp; Project Support</p>
         <p class="lede">My experience spans executive support and corporate operations, so I'm equally comfortable managing the details and understanding the bigger picture they connect to.</p>
         <div class="about-stats">
@@ -611,7 +648,7 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <section id="faq" class="band">
     <div class="wrap">
       <div class="head reveal">
-        <span class="eyebrow">FAQ</span>
+        <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 114 2c-1 .6-1.5 1.1-1.5 2.2M12 16.5h.01"/></svg>FAQ</span>
         <h2>Your questions, answered.</h2>
       </div>
       <div class="faq reveal">
@@ -628,7 +665,7 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
   <!-- CTA -->
   <section class="cta" id="contact">
     <div class="wrap">
-      <h2 class="reveal">Ready to hand it off?</h2>
+      <h2 class="reveal">Ready to <span class="hl">hand it off?</span></h2>
       <p class="lede reveal">Book a free 30-minute discovery call. We'll talk through what's on your plate, what keeps slipping, and what you'd hand off first.</p>
       <p class="note reveal">Ongoing retainers and scoped projects available.</p>
       <div class="reveal"><a class="btn btn-light js-book" href="#contact">Book a discovery call <span class="arr"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
@@ -659,6 +696,7 @@ footer{background:#161616;color:#A8A39A;padding:96px 0 40px}
       <span>© <span id="yr">2026</span> TWES · Tre'Erica Wallace</span>
     </div>
   </div>
+  <div class="wordmark" aria-hidden="true">✦ TWES</div>
 </footer>
 
 <script>

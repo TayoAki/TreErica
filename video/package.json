@@ -1,0 +1,14 @@
+{
+  "name": "tre-hero-video",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts HeroBriefing out/hero.mp4 --codec=h264 --crf=24 --scale=0.75 && remotion render src/index.ts HeroBriefing out/hero.webm --codec=vp9 --crf=36 --scale=0.75 && remotion still src/index.ts HeroBriefing out/hero-poster.jpg --frame=265 --scale=0.75"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.533",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.533"
+  }
+}
