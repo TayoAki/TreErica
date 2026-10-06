@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work With Tre · Fractional Executive Assistant</title>
+<meta name="description" content="Tre'Erica Wallace — fractional executive assistant and project support for founders with too much in motion. Atlanta-based, remote-friendly, ongoing and project-based support.">
+<meta property="og:title" content="Work With Tre · You lead the vision. I keep it moving.">
+<meta property="og:description" content="Fractional executive assistant and project support for founders. Calendar, logistics, vendors, events, and the projects that keep landing back on your plate.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238B5CF6'/%3E%3Cstop offset='1' stop-color='%23532CA9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M18 33l9 9 19-20' fill='none' stroke='white' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@1,8..60,500;1,8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#532CA9;
+  --purple-600:#6438C9;
+  --purple-500:#7B4EE4;
+  --purple-300:#B9A2F4;
+  --purple-100:#E6DCFD;
+  --purple-50:#F3EEFF;
+  --ink:#1B0D33;
+  --ink-2:#341B67;
+  --text:#2A2238;
+  --muted:#6B6578;
+  --line:#E7E3EF;
+  --guide:#E2DCF0;
+  --bg:#F6F6F6;
+  --card:#FFFFFF;
+  --night:#0E0819;
+  --green:#14A06B;
+  --radius:18px;
+  --shadow-card:0 1px 2px rgba(27,13,51,.04),0 8px 24px -12px rgba(27,13,51,.12);
+  --shadow-btn:rgba(78,3,255,.1) 0 .48px 1.25px -1.17px,rgba(78,3,255,.09) 0 1.83px 4.76px -2.33px,rgba(78,3,255,.05) 0 8px 20.8px -3.5px,rgba(255,255,255,.49) 0 -2px 9px 0 inset,rgba(78,3,255,.2) 0 0 0 2px;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+  --wrap:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{color:var(--ink);margin:0;font-weight:600;letter-spacing:-.035em;line-height:1.05}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ---------- top strip ---------- */
+.strip{background:var(--ink);color:#CFC6E4;font-size:13px;text-align:center;padding:11px 16px;display:flex;gap:10px 18px;justify-content:center;flex-wrap:wrap}
+.strip b{color:#fff;font-weight:500}
+.strip i{font-style:normal;opacity:.4}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--purple);color:#fff;border-radius:0 0 40px 40px;overflow:hidden;padding:0 0 0}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:150px 150px;background-position:center -40px;mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.6) 45%,transparent 85%)}
+.hero::after{content:"";position:absolute;left:50%;top:-30%;width:1100px;height:900px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(160,120,255,.45),transparent);pointer-events:none}
+.hero>*{position:relative;z-index:1}
+
+.nav{position:sticky;top:0;z-index:50;display:flex;justify-content:center;padding:0 16px;pointer-events:none}
+.nav-inner{pointer-events:auto;width:100%;max-width:1100px;display:flex;align-items:center;gap:12px;background:rgba(240,234,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:3px solid rgba(255,255,255,.75);border-top:0;border-radius:0 0 22px 22px;padding:8px 8px 8px 16px;box-shadow:0 10px 30px -15px rgba(27,13,51,.35)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(140deg,#9B6BFF,var(--purple));display:grid;place-items:center;box-shadow:inset 0 -2px 6px rgba(255,255,255,.35),0 4px 10px -4px rgba(83,44,169,.6)}
+.brand-name{font-weight:600;font-size:19px;letter-spacing:-.03em;line-height:1}
+.brand-name small{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:3px}
+.nav-links{display:flex;gap:4px;margin-left:18px}
+.nav-links a{color:#4B4360;font-size:15px;padding:8px 12px;border-radius:10px;transition:background .2s}
+.nav-links a:hover{background:rgba(83,44,169,.08);color:var(--ink)}
+.nav-cta{margin-left:auto;display:flex;gap:8px}
+.menu-btn{display:none;margin-left:auto;background:none;border:0;padding:10px;color:var(--ink);cursor:pointer}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 16px/1 var(--sans);letter-spacing:-.02em;border-radius:var(--radius);padding:15px 22px;border:0;cursor:pointer;transition:transform .15s ease,filter .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.btn:active{transform:translateY(0)}
+.btn-primary{background:var(--purple);color:#fff;box-shadow:var(--shadow-btn)}
+.btn-dark{background:var(--ink-2);color:#fff;box-shadow:var(--shadow-btn)}
+.btn-light{background:linear-gradient(#fff,#F1ECFB);color:var(--ink);box-shadow:0 0 0 4px rgba(255,255,255,.18),0 6px 18px -6px rgba(27,13,51,.35)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-sm{padding:11px 16px;font-size:15px;border-radius:14px}
+.btn .aside{font-weight:400;opacity:.6;font-size:14px}
+
+.hero-copy{text-align:center;padding-top:110px;padding-bottom:56px;max-width:920px;margin:0 auto}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:15px;border-radius:999px;padding:7px 14px}
+.pill-hero{background:rgba(27,13,51,.28);border:1px solid rgba(255,255,255,.14);color:#EDE6FF}
+.pill-hero .dot{width:7px;height:7px;border-radius:50%;background:#7CF0B9;box-shadow:0 0 0 3px rgba(124,240,185,.2)}
+.hero h1{color:#fff;font-size:clamp(44px,7.4vw,84px);margin:26px 0 22px;background:linear-gradient(180deg,#fff 30%,#D8CCFF);-webkit-background-clip:text;background-clip:text}
+.hl{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:-.03em;display:inline-block;padding:.02em .22em .1em;border-radius:.2em;line-height:1}
+.hero .hl{color:#fff;-webkit-text-fill-color:#fff;background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.3);box-shadow:inset 0 1px 0 rgba(255,255,255,.2)}
+.hero-sub{font-size:clamp(17px,2vw,20px);color:#E4DBFF;max-width:690px;margin:0 auto;line-height:1.5}
+.hero-sub strong{color:#fff;font-weight:600}
+.hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.checks{display:flex;gap:10px 26px;justify-content:center;flex-wrap:wrap;margin-top:26px;font-size:15px;color:#F0EAFF}
+.checks span{display:inline-flex;align-items:center;gap:8px}
+.checks svg{flex:none}
+
+/* hero mock */
+.stage{position:relative;max-width:1100px;margin:0 auto;padding:0 24px}
+.window{background:#fff;border-radius:22px 22px 0 0;border:8px solid rgba(255,255,255,.22);border-bottom:0;box-shadow:0 -10px 60px -10px rgba(20,0,60,.45);color:var(--text);display:grid;grid-template-columns:220px 1fr;overflow:hidden;min-height:420px;background-clip:padding-box}
+.win-side{background:#FAF9FC;border-right:1px solid var(--line);padding:18px 14px;font-size:14px}
+.win-side .brand{margin-bottom:18px}
+.win-side .logo{width:28px;height:28px;border-radius:8px}
+.win-side .brand-name{font-size:15px}
+.search{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;color:#9A94A8;font-size:13px;background:#fff;margin-bottom:18px}
+.search kbd{margin-left:auto;font:500 11px var(--sans);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+.side-label{font-size:12px;color:#9A94A8;margin:0 6px 8px}
+.side-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:9px;color:#3D3550;margin-bottom:2px}
+.side-item.on{background:#fff;box-shadow:0 0 0 1px var(--line),0 2px 6px -3px rgba(27,13,51,.15);color:var(--ink);font-weight:500}
+.side-item svg{color:var(--purple-500)}
+.win-main{padding:22px 24px}
+.win-head{display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.win-head h3{font-size:19px;letter-spacing:-.02em}
+.win-head p{font-size:13px;color:var(--muted);margin-top:4px}
+.win-tag{margin-left:auto;font-size:12px;font-weight:600;color:var(--purple);background:var(--purple-50);border:1px solid var(--purple-100);border-radius:8px;padding:6px 10px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.kpi{border:1px solid var(--line);border-radius:14px;padding:14px}
+.kpi small{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:12px}
+.kpi b{display:block;font-size:24px;color:var(--ink);letter-spacing:-.03em;margin-top:6px}
+.kpi em{font-style:normal;font-size:12px;color:var(--muted)}
+.kpi .ok{color:var(--green);font-weight:600}
+.agenda{border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.agenda-row{display:grid;grid-template-columns:62px 1fr auto;gap:14px;align-items:center;padding:12px 14px;border-top:1px solid var(--line);font-size:14px}
+.agenda-row:first-child{border-top:0}
+.agenda-row time{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.agenda-row p{color:var(--muted);font-size:13px}
+.agenda-row strong{color:var(--ink);font-weight:500;display:block;font-size:14px}
+.chip{font-size:12px;font-weight:500;border-radius:7px;padding:4px 9px;border:1px solid;white-space:nowrap}
+.chip.done{color:#0E7A52;border-color:#BDEBD7;background:#ECFAF3}
+.chip.flag{color:#A15C00;border-color:#F7DDB0;background:#FFF6E6}
+.chip.held{color:var(--purple);border-color:var(--purple-100);background:var(--purple-50)}
+.float{position:absolute;background:#fff;color:var(--text);border-radius:16px;padding:14px 16px;box-shadow:0 0 0 6px rgba(255,255,255,.25),0 20px 40px -14px rgba(20,0,60,.5);font-size:13px;z-index:2}
+.float-a{left:-6px;bottom:70px;transform:rotate(-4deg);width:230px}
+.float-b{right:-34px;top:-34px;transform:rotate(3.5deg);width:240px}
+.float h4{font-size:15px;letter-spacing:-.02em;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.float ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.float li{display:flex;gap:8px;align-items:center;color:#3D3550}
+.tick{width:16px;height:16px;border-radius:50%;background:var(--purple-500);display:grid;place-items:center;flex:none}
+.illus-tag{position:absolute;right:34px;bottom:14px;z-index:3;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:6px;padding:3px 7px}
+
+/* ---------- canvas & sections ---------- */
+.canvas{position:relative}
+.canvas::before,.canvas::after{content:"";position:absolute;top:0;bottom:0;width:1px;background:var(--guide);left:calc(50% - 600px - 12px)}
+.canvas::after{left:auto;right:calc(50% - 600px - 12px)}
+section{position:relative;padding:110px 0}
+.divider{position:relative;height:1px;background:var(--guide);max-width:calc(var(--wrap) + 24px);margin:0 auto}
+.divider span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--bg);padding:0 22px;display:flex;gap:14px;align-items:center;color:var(--purple-300)}
+.head{text-align:center;max-width:820px;margin:0 auto 60px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--purple-100);color:var(--purple);border-radius:999px;padding:6px 14px;font-size:15px;font-weight:500;letter-spacing:-.01em}
+.head h2{font-size:clamp(36px,5.4vw,64px);margin:22px 0 20px}
+.head .hl,.light-hl{color:var(--purple);background:var(--purple-100)}
+.lede{font-size:clamp(17px,1.8vw,19px);color:var(--muted);max-width:640px;margin:0 auto}
+
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow-card);border:1px solid rgba(231,227,239,.7)}
+
+/* outcome */
+.outcome{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch}
+.quote{padding:44px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.sig{margin-top:auto;padding-top:28px;display:flex;align-items:center;gap:14px}
+.sig .mono{width:48px;height:48px;border-radius:14px;background:linear-gradient(140deg,#9B6BFF,var(--purple));color:#fff;display:grid;place-items:center;font-weight:600;letter-spacing:-.02em;box-shadow:var(--shadow-btn)}
+.sig b{display:block;color:var(--ink);font-weight:600}
+.sig small{color:var(--muted);font-size:14px}
+.quote blockquote{margin:0;font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(30px,3.6vw,44px);line-height:1.12;letter-spacing:-.02em;color:var(--ink)}
+.quote blockquote mark{background:var(--purple-100);color:var(--purple);border-radius:.18em;padding:0 .14em}
+.quote p{margin-top:22px;color:var(--muted);font-size:17px;max-width:520px}
+.asks{padding:28px;background:linear-gradient(180deg,#fff 0%,var(--purple-50) 100%)}
+.asks h3{font-size:17px;letter-spacing:-.02em;margin-bottom:4px}
+.asks>p{color:var(--muted);font-size:14px;margin-bottom:18px}
+.ask{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin-bottom:10px;box-shadow:0 4px 12px -8px rgba(27,13,51,.2)}
+.ask .av{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--purple-50);color:var(--purple);flex:none}
+.ask b{display:block;color:var(--ink);font-weight:500;font-size:15px}
+.ask small{color:var(--muted);font-size:13px}
+.ask .chip{margin-left:auto}
+
+/* familiar */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sit{padding:26px 24px 28px;position:relative;overflow:hidden}
+.sit .num{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--purple-500)}
+.sit h3{font-size:20px;letter-spacing:-.025em;margin:14px 0 10px;line-height:1.2}
+.sit p{color:var(--muted);font-size:15px}
+.sit .ic{width:44px;height:44px;border-radius:12px;background:var(--purple-50);color:var(--purple);display:grid;place-items:center;margin-bottom:6px}
+
+/* offers */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.offer{display:flex;flex-direction:column;overflow:hidden;padding:0}
+.offer-top{background:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px) 0 0/12px 12px,linear-gradient(180deg,#6A3FE0 0%,#8A63F0 55%,#F3EEFF 100%);padding:26px 24px 70px;color:#fff;position:relative}
+.offer-top .pill{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);font-size:13px;padding:5px 11px}
+.offer-top h3{color:#fff;font-size:26px;margin-top:18px;letter-spacing:-.03em}
+.offer-top .who{margin-top:10px;font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.3;color:#F4EFFF}
+.offer-body{padding:0 24px 26px;margin-top:-44px;position:relative;flex:1;display:flex;flex-direction:column}
+.offer-scope{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 8px 20px -12px rgba(27,13,51,.25)}
+.offer-scope small{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+.offer-scope ul{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px;font-size:15px;color:var(--text)}
+.offer-scope li{display:flex;gap:10px;align-items:flex-start}
+.offer-scope li .tick{margin-top:3px}
+.offer-meta{margin-top:18px;display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.offer-meta b{color:var(--ink);font-weight:600}
+.offer.feature{box-shadow:0 0 0 2px var(--purple-300),var(--shadow-card)}
+.note{text-align:center;color:var(--muted);font-size:14px;margin-top:26px}
+
+/* handoff */
+.hand{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hand .card{padding:28px}
+.hand .k{display:inline-flex;align-items:center;justify-content:center;font:600 13px var(--sans);color:#fff;background:var(--purple);border-radius:8px;padding:4px 9px;box-shadow:var(--shadow-btn)}
+.hand h3{font-size:22px;margin:18px 0 8px;letter-spacing:-.03em}
+.hand .desc{color:var(--muted);font-size:15px;margin-bottom:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:14px;border:1px solid var(--line);background:#FBFAFD;border-radius:9px;padding:6px 10px;color:#3D3550}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{overflow:hidden;padding:0}
+.step-art{height:200px;background:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1px) 0 0/12px 12px,linear-gradient(180deg,#6A3FE0,#9C7BF5 70%,#fff 100%);display:grid;place-items:center;position:relative}
+.step-art .mini{background:#fff;border-radius:14px;padding:12px 14px;width:72%;box-shadow:0 0 0 6px rgba(255,255,255,.28),0 16px 30px -12px rgba(20,0,60,.5);font-size:12.5px;color:var(--text)}
+.mini .row{display:flex;align-items:center;gap:8px;padding:5px 0;border-top:1px solid var(--line)}
+.mini .row:first-of-type{border-top:0}
+.mini .bar{height:6px;border-radius:9px;background:var(--line);flex:1;overflow:hidden}
+.mini .bar i{display:block;height:100%;background:var(--purple-500);border-radius:9px}
+.mini h5{margin:0 0 6px;font-size:13px;color:var(--ink);letter-spacing:-.01em;display:flex;align-items:center;gap:6px}
+.step-label{display:flex;align-items:center;justify-content:center;gap:10px;margin:-14px 0 0;position:relative}
+.step-label::before,.step-label::after{content:"";height:1px;width:46px;background:var(--line)}
+.step-label span{background:var(--purple);color:#fff;font-weight:600;font-size:13px;border-radius:7px;padding:5px 10px;box-shadow:var(--shadow-btn)}
+.step-body{text-align:center;padding:16px 26px 28px}
+.step-body h3{font-size:22px;letter-spacing:-.03em;margin-bottom:8px}
+.step-body p{color:var(--muted);font-size:15px}
+
+.think{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.think .card{padding:26px}
+.think h3{font-family:var(--serif);font-style:italic;font-weight:500;font-size:28px;letter-spacing:-.02em;color:var(--purple)}
+.think ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px;color:#3D3550;font-size:15px}
+.think li{display:flex;gap:10px}
+.think li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--purple-300);margin-top:9px}
+
+/* proof */
+.stories{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.story{padding:32px;display:flex;flex-direction:column}
+.story-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.real{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#0E7A52;background:#ECFAF3;border:1px solid #BDEBD7;border-radius:999px;padding:4px 10px}
+.story-meta span:last-child{font-size:14px;color:var(--muted)}
+.story h3{font-size:clamp(22px,2.4vw,28px);letter-spacing:-.03em;line-height:1.15;margin-bottom:14px}
+.story p{color:var(--muted);font-size:16px}
+.story-flow{margin-top:auto;padding-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.story-flow div{background:var(--purple-50);border:1px solid var(--purple-100);border-radius:12px;padding:10px 12px}
+.story-flow small{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--purple-500);font-weight:600}
+.story-flow b{font-size:14px;font-weight:500;color:var(--ink);line-height:1.3;display:block;margin-top:3px}
+
+.samples-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:70px 0 22px;flex-wrap:wrap}
+.samples-head h3{font-size:clamp(26px,3vw,34px)}
+.samples-head p{color:var(--muted);max-width:460px;font-size:15px}
+.samples{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.sample{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.sample-label{display:flex;align-items:center;gap:8px;padding:10px 18px;background:#FFF6E6;border-bottom:1px solid #F7DDB0;color:#8A4F00;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.sample-inner{padding:22px 22px 24px;flex:1;display:flex;flex-direction:column}
+.sample h4{font-size:19px;letter-spacing:-.025em}
+.sample .sub{color:var(--muted);font-size:13px;margin:4px 0 16px}
+.sample .foot{margin-top:auto;padding-top:14px;font-size:14px;color:#3D3550;border-top:1px dashed var(--line)}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;margin-bottom:14px}
+.tbl th{text-align:left;font-weight:500;color:var(--muted);font-size:12px;background:#FAF9FC;padding:9px 12px;white-space:nowrap}
+.tbl td{padding:10px 12px;border-top:1px solid var(--line);white-space:nowrap;color:var(--ink)}
+.tbl tr.pick td{background:var(--purple-50)}
+.tbl .save{color:var(--green);font-weight:600}
+.timeline{display:grid;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:14px}
+.tl{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:10px 12px;border-top:1px solid var(--line);font-size:13.5px}
+.tl:first-child{border-top:0}
+.tl time{font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.tl b{font-weight:500;color:var(--ink);display:block}
+.tl span{color:var(--muted);font-size:13px}
+.tl-day{background:#FAF9FC;font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:600;color:var(--purple-500);padding:7px 12px;border-top:1px solid var(--line)}
+.tl-day:first-child{border-top:0}
+.flagged{display:inline-block;margin-top:4px;font-size:12px;color:#A15C00;background:#FFF6E6;border:1px solid #F7DDB0;border-radius:6px;padding:1px 6px}
+
+/* engagement */
+.engage{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:e}
+.eng{padding:24px;position:relative}
+.eng .n{width:40px;height:40px;border-radius:12px;background:var(--purple);color:#fff;font-weight:600;display:grid;place-items:center;box-shadow:var(--shadow-btn);margin-bottom:18px}
+.eng h3{font-size:19px;letter-spacing:-.025em;margin-bottom:8px}
+.eng p{color:var(--muted);font-size:15px}
+.eng .out{margin-top:14px;font-size:13px;color:var(--purple);background:var(--purple-50);border-radius:9px;padding:8px 10px}
+
+/* background */
+.bg-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:20px}
+.stats{display:grid;gap:16px}
+.stat{padding:24px 26px;display:flex;gap:18px;align-items:center}
+.stat b{font-size:42px;letter-spacing:-.045em;color:var(--purple);line-height:1;min-width:120px;font-weight:600}
+.stat p{color:var(--muted);font-size:15px}
+.stat p strong{color:var(--ink);font-weight:500;display:block;font-size:16px}
+.roles{padding:30px}
+.role{padding:20px 0;border-top:1px solid var(--line)}
+.role:first-of-type{border-top:0;padding-top:4px}
+.role-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.role h3{font-size:20px;letter-spacing:-.025em}
+.role .when{font-size:14px;color:var(--muted)}
+.role .org{font-size:15px;color:var(--purple);font-weight:500;margin:4px 0 10px}
+.role ul{margin:0;padding-left:18px;color:#3D3550;font-size:15px;display:grid;gap:6px}
+.role ul li::marker{color:var(--purple-300)}
+.tools{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.tools small{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600;margin-bottom:10px}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:0 20px;box-shadow:0 1px 2px rgba(27,13,51,.03)}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;font-weight:500;color:var(--ink);font-size:17px;letter-spacing:-.015em}
+.faq summary::-webkit-details-marker{display:none}
+.faq .pm{flex:none;width:38px;height:38px;border-radius:10px;background:var(--purple-500);color:#fff;display:grid;place-items:center;box-shadow:var(--shadow-btn)}
+.faq .pm svg{transition:transform .25s}
+.faq details[open] .pm svg{transform:rotate(45deg)}
+.faq details p{color:var(--muted);font-size:15.5px;padding:0 54px 20px 0;border-top:1px solid var(--line);padding-top:14px}
+
+/* cta */
+.cta{background:var(--purple);border-radius:28px;color:#fff;padding:52px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;right:-120px;top:-120px;width:520px;height:520px;background:radial-gradient(closest-side,rgba(170,130,255,.55),transparent)}
+.cta>*{position:relative}
+.cta .mini-brand{display:flex;align-items:center;gap:12px;font-size:15px;color:#E4DBFF}
+.cta .mini-brand .sep{width:1px;height:26px;background:rgba(255,255,255,.25)}
+.cta h2{color:#fff;font-size:clamp(34px,4.6vw,54px);margin:24px 0 18px}
+.cta h2 .hl{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.3)}
+.cta p.l{color:#E4DBFF;font-size:18px;max-width:560px}
+.cta .hero-ctas{justify-content:flex-start}
+.cta .checks{justify-content:flex-start}
+.contact{display:grid;gap:10px;align-content:center}
+.ci{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:14px 16px}
+.ci .ico{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.14);display:grid;place-items:center;flex:none}
+.ci small{display:block;font-size:12px;color:#CBBDF5;text-transform:uppercase;letter-spacing:.06em}
+.ci a,.ci span.v{font-weight:500;color:#fff;font-size:16px;word-break:break-all}
+.copy{margin-left:auto;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:9px;font:500 13px var(--sans);padding:7px 10px;cursor:pointer}
+.copy:hover{background:rgba(255,255,255,.2)}
+
+/* footer */
+footer{background:var(--night);color:#BDB4D1;border-radius:40px 40px 0 0;margin-top:110px;padding:64px 0 0;overflow:hidden;position:relative}
+footer::after{content:"";position:absolute;right:-200px;bottom:-200px;width:700px;height:500px;background:radial-gradient(closest-side,rgba(110,60,220,.4),transparent)}
+.ft-lead{text-align:center;font-size:clamp(20px,2.4vw,26px);letter-spacing:-.03em;color:#fff;margin-bottom:22px}
+.ft-lead em{font-style:normal;color:#A88BFF}
+.ft-tags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:960px;margin:0 auto 46px}
+.ft-tags span{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#E7E1F5;border-radius:9px;padding:7px 12px;font-size:14px}
+.ft-tags span.on{color:#B49CFF;background:rgba(123,78,228,.16);border-color:rgba(123,78,228,.35)}
+.ft-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);padding:28px 0}
+.ft-row .brand{color:#fff}
+.ft-row .brand-name small{color:#9C93B3}
+.ft-row p{max-width:420px;font-size:15px;border-left:1px solid rgba(255,255,255,.12);padding-left:24px}
+.ft-mail{margin-left:auto;display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);border-radius:12px;padding:12px 16px;color:#fff}
+.ft-links{display:flex;gap:56px;flex-wrap:wrap;padding:32px 0;font-size:15px}
+.ft-links h5{margin:0 0 14px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#8E85A6;font-weight:500}
+.ft-links a{display:block;color:#EAE5F5;margin-bottom:10px}
+.ft-links a:hover{color:#B49CFF}
+.ft-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:#8E85A6;border-top:1px solid rgba(255,255,255,.08);padding:22px 0}
+.wordmark{position:relative;z-index:1;font-weight:700;letter-spacing:-.06em;font-size:clamp(90px,24vw,340px);line-height:.8;text-align:center;margin-top:20px;background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,0) 85%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none;white-space:nowrap}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1260px){.canvas::before,.canvas::after{display:none}}
+@media (max-width:1040px){
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .engage{grid-template-columns:repeat(2,1fr)}
+  .float-b{display:none}
+}
+@media (max-width:900px){
+  .nav-links,.nav-cta .btn-light{display:none}
+  .outcome,.stories,.samples,.bg-grid,.cta{grid-template-columns:1fr}
+  .grid-3,.hand,.steps,.think{grid-template-columns:1fr}
+  .window{grid-template-columns:1fr}
+  .win-side{display:none}
+  .float-a{display:none}
+  .cta{padding:36px 28px}
+  section{padding:84px 0}
+}
+@media (max-width:620px){
+  .wrap{padding:0 16px}
+  .strip{font-size:12px}
+  .strip .hide-sm{display:none}
+  .nav{padding:0 8px}
+  .nav-cta .btn-primary{padding:10px 13px;font-size:14px}
+  .hero-copy{padding-top:76px;padding-bottom:44px}
+  .hero h1{font-size:40px}
+  .hero-ctas .btn{width:100%}
+  .stage{padding:0 10px}
+  .window{border-width:5px}
+  .win-main{padding:16px}
+  .kpis{grid-template-columns:1fr 1fr}
+  .kpis .kpi:last-child{display:none}
+  .agenda-row{grid-template-columns:48px 1fr}
+  .agenda-row .chip{grid-column:2;justify-self:start}
+  .grid-4,.engage{grid-template-columns:1fr}
+  .quote{padding:28px}
+  .story{padding:24px}
+  .story-flow{grid-template-columns:1fr}
+  .stat{flex-direction:column;align-items:flex-start;gap:8px}
+  .faq details p{padding-right:0}
+  .ft-row p{border-left:0;padding-left:0}
+  .ft-mail{margin-left:0}
+  .ft-links{gap:32px}
+  .illus-tag{right:18px}
+}
+</style>
+</head>
+<body>
+
+<div class="strip">
+  <span><b>Work With Tre</b> · by TWES</span><i class="hide-sm">/</i>
+  <span class="hide-sm">Fractional executive assistant &amp; project support</span><i>/</i>
+  <span>Atlanta, GA · Remote-friendly</span>
+</div>
+
+<header class="hero" id="top">
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Work With Tre home">
+        <span class="logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        <span class="brand-name">Work With Tre<small>by TWES</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">The work</a>
+        <a href="#process">How we start</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-light btn-sm" href="#contact">Get in touch</a>
+        <a class="btn btn-primary btn-sm js-book" href="#contact">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg>
+          Book a call
+        </a>
+      </div>
+      <button class="menu-btn" aria-label="Menu" hidden></button>
+    </div>
+  </nav>
+
+  <div class="wrap hero-copy">
+    <span class="pill pill-hero"><span class="dot"></span>Fractional EA &amp; Project Support · For founders</span>
+    <h1>You lead the vision.<br>I keep it <span class="hl">moving.</span></h1>
+    <p class="hero-sub">Fractional executive assistant and project support for founders with too much in motion. I manage the calendar, coordinate the logistics, and <strong>take ownership of the projects that keep landing back on your plate</strong>, from vendor research and travel to events and launch coordination.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-light js-book" href="#contact">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+        Book a discovery call <span class="aside">— 30 min</span>
+      </a>
+      <a class="btn btn-dark" href="#services">See ways to work together</a>
+    </div>
+    <div class="checks">
+      <span><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff"/><path d="M7.5 12.5l3 3 6-6" stroke="#532CA9" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>5+ years supporting founders &amp; executives</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff"/><path d="M7.5 12.5l3 3 6-6" stroke="#532CA9" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Ongoing or project-based</span>
+      <span><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff"/><path d="M7.5 12.5l3 3 6-6" stroke="#532CA9" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Atlanta on-site or remote</span>
+    </div>
+  </div>
+
+  <div class="stage" aria-label="Illustrative sample of a weekly briefing">
+    <div class="float float-a">
+      <h4><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7B4EE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>Venue search</h4>
+      <ul>
+        <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>9 options researched</li>
+        <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Narrowed to 3</li>
+        <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Recommendation ready</li>
+      </ul>
+    </div>
+    <div class="float float-b">
+      <h4><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7B4EE4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16l20-8-8 14-3-6z"/></svg>Chicago trip</h4>
+      <ul>
+        <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Flights &amp; car booked</li>
+        <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Briefing doc packed</li>
+        <li><span class="chip flag">Return check-in Tue</span></li>
+      </ul>
+    </div>
+    <div class="window">
+      <aside class="win-side" aria-hidden="true">
+        <div class="brand"><span class="logo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="brand-name">Tre</span></div>
+        <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Quick find<kbd>⌘K</kbd></div>
+        <div class="side-label">This week</div>
+        <div class="side-item on"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg>Monday brief</div>
+        <div class="side-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 10h18"/></svg>Calendar</div>
+        <div class="side-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16l20-8-8 14-3-6z"/></svg>Travel</div>
+        <div class="side-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0M16 4.5a3.5 3.5 0 010 7M21.5 20a6.5 6.5 0 00-4-6"/></svg>Vendors</div>
+        <div class="side-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v13H3zM8 7V4h8v3"/></svg>Projects</div>
+      </aside>
+      <div class="win-main">
+        <div class="win-head">
+          <div>
+            <h3>Monday Morning Briefing</h3>
+            <p>Sent before the week's first meeting</p>
+          </div>
+        </div>
+        <div class="kpis">
+          <div class="kpi"><small>Meetings this week</small><b>14</b><em><span class="ok">↓ 3</span> after consolidating</em></div>
+          <div class="kpi"><small>Open loops</small><b>2</b><em>Both waiting on vendors</em></div>
+          <div class="kpi"><small>Decisions for you</small><b>1</b><em>Venue pick by Wed</em></div>
+        </div>
+        <div class="agenda">
+          <div class="agenda-row"><time>9:00</time><div><strong>Board deck review with CFO</strong><p>Final numbers came in late Friday. Updated slide 7 is attached.</p></div><span class="chip done">Ready</span></div>
+          <div class="agenda-row"><time>11:30</time><div><strong>Call with partner team</strong><p>They asked to push 30 minutes. Confirmed, calendar updated.</p></div><span class="chip flag">Overlaps lunch 1:1</span></div>
+          <div class="agenda-row"><time>2:00</time><div><strong>Open block</strong><p>Held for the proposal review you mentioned Friday.</p></div><span class="chip held">Protected</span></div>
+        </div>
+      </div>
+    </div>
+    <span class="illus-tag">Illustrative sample</span>
+  </div>
+</header>
+
+<main class="canvas">
+
+  <!-- OUTCOME -->
+  <section id="short">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9z"/></svg>The short version</span>
+        <h2>You have a lot going on.<br>I make sure it <span class="hl">gets done.</span></h2>
+        <p class="lede">You don't need another person to assign tasks to. You need someone who can take the moving pieces, organize them, and keep them moving.</p>
+      </div>
+      <div class="outcome">
+        <div class="card quote reveal">
+          <blockquote>“Hand me an <mark>outcome</mark>, not an instruction manual.”</blockquote>
+          <p>Find us a venue. Sort out merch. Get this meeting scheduled. Turn this into a deck. You stay focused on the business. I handle what's underneath it, and I come back with it done or with the one decision only you can make.</p>
+          <div class="sig"><span class="mono">TW</span><div><b>Tre'Erica Wallace</b><small>Fractional EA &amp; project support · Atlanta, GA</small></div></div>
+        </div>
+        <div class="card asks reveal">
+          <h3>What a hand-off sounds like</h3>
+          <p>Short asks in, finished work out.</p>
+          <div class="ask"><span class="av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></span><div><b>“Find us a venue for 70.”</b><small>Research → shortlist → recommendation</small></div><span class="chip done">Done</span></div>
+          <div class="ask"><span class="av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.6 12.5L12 21l-8.6-8.5V3.4h9.1z"/><circle cx="8" cy="8" r="1.5"/></svg></span><div><b>“Sort out merch for the launch.”</b><small>Vendors, quotes, proofs, delivery</small></div><span class="chip held">In motion</span></div>
+          <div class="ask"><span class="av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 10h18"/></svg></span><div><b>“Get this meeting on the books.”</b><small>Five calendars, one time that works</small></div><span class="chip done">Done</span></div>
+          <div class="ask"><span class="av"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span><div><b>“Turn these notes into a deck.”</b><small>Structure, slides, ready to present</small></div><span class="chip flag">Your review</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
+
+  <!-- FAMILIAR -->
+  <section id="fit">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg>Sound familiar?</span>
+        <h2>When founders <span class="hl">call me in</span></h2>
+        <p class="lede">I work best with founders who have a lot going on at once and need a proactive right hand, not another person to manage.</p>
+      </div>
+      <div class="grid-4">
+        <article class="card sit reveal">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 10h18M8 14h3M8 17h6"/></svg></div>
+          <span class="num">01</span>
+          <h3>The calendar runs you.</h3>
+          <p>Back-to-backs, double-bookings, and a stream of “does Tuesday work?” emails eating the hours you need for real work.</p>
+        </article>
+        <article class="card sit reveal">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l1.9 6.1L20 10l-6.1 1.9L12 18l-1.9-6.1L4 10l6.1-1.9z"/></svg></div>
+          <span class="num">02</span>
+          <h3>A launch or event is coming.</h3>
+          <p>Venues, vendors, travel, merch, and run-of-show, all landing at once on top of your normal week.</p>
+        </article>
+        <article class="card sit reveal">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0M16 4.5a3.5 3.5 0 010 7M21.5 20a6.5 6.5 0 00-4-6"/></svg></div>
+          <span class="num">03</span>
+          <h3>Vendors need chasing.</h3>
+          <p>Quotes to compare, contractors who went quiet, and invoices nobody has checked against what was agreed.</p>
+        </article>
+        <article class="card sit reveal">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 20V9"/></svg></div>
+          <span class="num">04</span>
+          <h3>Projects keep stalling.</h3>
+          <p>Good ideas with no owner. They come up every week and never quite move, because there's no one to drive them.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
+
+  <!-- OFFERS -->
+  <section id="services">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>Ways to work together</span>
+        <h2>Three ways to <span class="hl">hand it off</span></h2>
+        <p class="lede">One promise, proactive ownership, offered in the shape that fits what's on your plate right now.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card offer reveal">
+          <div class="offer-top">
+            <span class="pill">Monthly retainer</span>
+            <h3>Ongoing Executive Support</h3>
+            <p class="who">“My calendar, inbox, and follow-ups are consuming my attention.”</p>
+          </div>
+          <div class="offer-body">
+            <div class="offer-scope">
+              <small>What's included</small>
+              <ul>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Calendar &amp; scheduling</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Inbox triage &amp; correspondence</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Meeting prep &amp; follow-ups</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Travel &amp; itineraries</li>
+              </ul>
+            </div>
+            <div class="offer-meta"><b>Defined monthly capacity</b>· set on our call</div>
+          </div>
+        </article>
+        <article class="card offer feature reveal">
+          <div class="offer-top">
+            <span class="pill">Most complete</span>
+            <h3>Executive + Project Support</h3>
+            <p class="who">“I need daily support, and I have projects nobody is owning.”</p>
+          </div>
+          <div class="offer-body">
+            <div class="offer-scope">
+              <small>Everything in Ongoing, plus</small>
+              <ul>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Vendor sourcing &amp; comparisons</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Research, decks &amp; materials</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Event &amp; launch logistics</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Project tracking to done</li>
+              </ul>
+            </div>
+            <div class="offer-meta"><b>Larger retainer</b>· explicit project limits</div>
+          </div>
+        </article>
+        <article class="card offer reveal">
+          <div class="offer-top">
+            <span class="pill">Scoped project</span>
+            <h3>Special Project Support</h3>
+            <p class="who">“I have one thing that needs to get done.”</p>
+          </div>
+          <div class="offer-body">
+            <div class="offer-scope">
+              <small>Typical projects</small>
+              <ul>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>An event or offsite</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Venue search &amp; recommendation</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Complex travel planning</li>
+                <li><span class="tick"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Launch-week logistics</li>
+              </ul>
+            </div>
+            <div class="offer-meta"><b>Project fee</b>· milestones &amp; clear exclusions</div>
+          </div>
+        </article>
+      </div>
+      <p class="note reveal">Every engagement starts with a scope: capacity, response times, what I decide on my own, and what comes to you for approval.</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
+
+  <!-- WHAT YOU CAN HAND ME -->
+  <section id="scope">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Scope</span>
+        <h2><span class="hl">What you can</span><br>hand me</h2>
+        <p class="lede">Executive support, projects, and operations: the daily load, the one-off work with no template, and the recurring processes that keep things from slipping.</p>
+      </div>
+      <div class="hand">
+        <article class="card reveal">
+          <span class="k">01</span>
+          <h3>Executive Support</h3>
+          <p class="desc">A founder's day-to-day priorities, kept in order.</p>
+          <div class="tags"><span class="tag">Inbox management</span><span class="tag">Calendar</span><span class="tag">Travel &amp; itineraries</span><span class="tag">Meeting coordination</span><span class="tag">Correspondence</span><span class="tag">Follow-ups</span></div>
+        </article>
+        <article class="card reveal">
+          <span class="k">02</span>
+          <h3>Projects &amp; Logistics</h3>
+          <p class="desc">The one-off work with no template yet.</p>
+          <div class="tags"><span class="tag">Vendor sourcing</span><span class="tag">Events</span><span class="tag">Research</span><span class="tag">Comparisons &amp; recommendations</span><span class="tag">Decks &amp; materials</span><span class="tag">Merch coordination</span><span class="tag">Launches</span></div>
+        </article>
+        <article class="card reveal">
+          <span class="k">03</span>
+          <h3>Business Operations</h3>
+          <p class="desc">The recurring processes that keep things from slipping.</p>
+          <div class="tags"><span class="tag">Project tracking</span><span class="tag">Systems &amp; workflows</span><span class="tag">Documentation</span><span class="tag">Deadlines</span><span class="tag">Contractor coordination</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
+
+  <!-- HOW I WORK -->
+  <section id="how">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12h16M14 6l6 6-6 6"/></svg>How I work</span>
+        <h2>Give it to me in <span class="hl">three steps</span></h2>
+        <p class="lede">Ownership, made visible: you always know where something stands, what's next, and what needs you.</p>
+      </div>
+      <div class="steps">
+        <article class="card step reveal">
+          <div class="step-art">
+            <div class="mini">
+              <h5><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7B4EE4" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Researching 9 options</h5>
+              <div class="row"><span style="width:62px">Sourced</span><div class="bar"><i style="width:100%"></i></div></div>
+              <div class="row"><span style="width:62px">Compared</span><div class="bar"><i style="width:72%"></i></div></div>
+              <div class="row"><span style="width:62px">Questions</span><div class="bar"><i style="width:40%"></i></div></div>
+            </div>
+          </div>
+          <div class="step-label"><span>STEP 01</span></div>
+          <div class="step-body"><h3>Figure it out</h3><p>Research, source, compare, ask the right questions, find the answer.</p></div>
+        </article>
+        <article class="card step reveal">
+          <div class="step-art">
+            <div class="mini">
+              <h5><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7B4EE4" stroke-width="2.4"><path d="M4 6h16M4 12h10M4 18h7"/></svg>Plan &amp; timeline</h5>
+              <div class="row"><span class="chip done">Mon</span>Book vendor walk-through</div>
+              <div class="row"><span class="chip held">Wed</span>Your decision on venue</div>
+              <div class="row"><span class="chip flag">Fri</span>Deposits due</div>
+            </div>
+          </div>
+          <div class="step-label"><span>STEP 02</span></div>
+          <div class="step-body"><h3>Get it organized</h3><p>Turn the moving pieces into a clear plan, timeline, and next steps.</p></div>
+        </article>
+        <article class="card step reveal">
+          <div class="step-art">
+            <div class="mini">
+              <h5><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#7B4EE4" stroke-width="2.4"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Loop closed</h5>
+              <div class="row">Vendor confirmed in writing <span class="chip done" style="margin-left:auto">✓</span></div>
+              <div class="row">Invoice matches quote <span class="chip done" style="margin-left:auto">✓</span></div>
+              <div class="row">You've been told it landed <span class="chip done" style="margin-left:auto">✓</span></div>
+            </div>
+          </div>
+          <div class="step-label"><span>STEP 03</span></div>
+          <div class="step-body"><h3>Follow it through</h3><p>Track the details, communicate, troubleshoot, and close the loop.</p></div>
+        </article>
+      </div>
+      <div class="think">
+        <article class="card reveal"><h3>I notice.</h3><ul><li>The email that needs a response.</li><li>The vendor who hasn't followed up.</li><li>The deadline that's getting too close.</li></ul></article>
+        <article class="card reveal"><h3>I think ahead.</h3><ul><li>What will you need to make this decision?</li><li>What's likely to hold this project up?</li><li>What can I solve without adding to your plate?</li></ul></article>
+        <article class="card reveal"><h3>I close the loop.</h3><ul><li>If I own it, I follow it through.</li><li>I confirm it landed instead of assuming it did.</li><li>Nothing sits waiting on me.</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
+
+  <!-- PROOF -->
+  <section id="work">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg>Proof</span>
+        <h2>What the work <span class="hl">actually looks like</span></h2>
+        <p class="lede">Two real situations first, then a few illustrative samples of how I format and think through a hand-off.</p>
+      </div>
+
+      <div class="stories">
+        <article class="card story reveal">
+          <div class="story-meta"><span class="real"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Real story</span><span>Deloitte · Internal programs</span></div>
+          <h3>Catering spend was fixed. Training turnout wasn't.</h3>
+          <p>Actual turnout kept running lower than the RSVP count, so catering budgeted per headcount was consistently overspending on food that went to waste. I tracked the gap between RSVPs and attendance across sessions, adjusted orders to match the real pattern, and brought spend in line without cutting the program itself.</p>
+          <div class="story-flow">
+            <div><small>Noticed</small><b>RSVPs ≠ attendance</b></div>
+            <div><small>Tracked</small><b>The gap, session by session</b></div>
+            <div><small>Fixed</small><b>Orders matched to reality</b></div>
+          </div>
+        </article>
+        <article class="card story reveal">
+          <div class="story-meta"><span class="real"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Real story</span><span>Freelance · Founder support</span></div>
+          <h3>A founder's calendar, held together through a launch week.</h3>
+          <p>During a client's product launch week, requests for the founder's time came in faster than the calendar could absorb them. I built a priority system on the fly, moved what could move, protected what couldn't, and gave the founder a single daily brief instead of a stream of scheduling questions.</p>
+          <div class="story-flow">
+            <div><small>Prioritized</small><b>What mattered this week</b></div>
+            <div><small>Protected</small><b>The non-negotiables</b></div>
+            <div><small>Simplified</small><b>One daily brief</b></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="samples-head reveal">
+        <h3>Illustrative samples</h3>
+        <p>Mocked up to show format and thinking. Vendor names, numbers, and details are invented, not client records.</p>
+      </div>
+      <div class="samples">
+        <article class="card sample reveal">
+          <div class="sample-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Illustrative sample</div>
+          <div class="sample-inner">
+            <h4>Venue Research &amp; Recommendation</h4>
+            <p class="sub">Narrowed from nine options to a decision</p>
+            <div class="tbl-wrap"><table class="tbl">
+              <thead><tr><th>Venue</th><th>Capacity</th><th>Cost</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr class="pick"><td><b>The Garrison Room</b></td><td>80</td><td>$3,200</td><td>In-house AV, closest to airport</td></tr>
+                <tr><td>Lindell Loft</td><td>60</td><td>$2,450</td><td>No AV, would need rental</td></tr>
+                <tr><td>Norwood Hall</td><td>100</td><td>$4,800</td><td>Over budget for headcount</td></tr>
+              </tbody>
+            </table></div>
+            <p class="foot"><b>Recommended Garrison Room:</b> fits the guest count with room to spare, AV is included, and it's a 12-minute ride from the airport for out-of-town guests.</p>
+          </div>
+        </article>
+        <article class="card sample reveal">
+          <div class="sample-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Illustrative sample</div>
+          <div class="sample-inner">
+            <h4>Travel Itinerary: Chicago</h4>
+            <p class="sub">Two-day trip, built around a single client meeting</p>
+            <div class="timeline">
+              <div class="tl-day">Tuesday</div>
+              <div class="tl"><time>6:45a</time><div><b>Depart ATL</b><span>Seat 14C, TSA PreCheck confirmed</span></div></div>
+              <div class="tl"><time>8:52a</time><div><b>Arrive ORD</b><span>Car booked; driver has hotel and meeting addresses</span></div></div>
+              <div class="tl"><time>1:00p</time><div><b>Client meeting, Loop office</b><span>Briefing doc and leave-behinds printed and in the bag</span></div></div>
+              <div class="tl-day">Wednesday</div>
+              <div class="tl"><time>10:30a</time><div><b>Depart ORD</b><span>Return confirmed, checked in 24 hrs ahead</span></div></div>
+            </div>
+            <p class="foot">Built around one non-negotiable meeting time, with enough buffer that a delayed flight wouldn't put it at risk.</p>
+          </div>
+        </article>
+        <article class="card sample reveal">
+          <div class="sample-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Illustrative sample</div>
+          <div class="sample-inner">
+            <h4>Monday Morning Briefing</h4>
+            <p class="sub">Sent to the executive before the week's first meeting</p>
+            <div class="timeline">
+              <div class="tl"><time>9:00</time><div><b>Board deck review with CFO</b><span>Final numbers came in late Friday. Updated slide 7 is attached; nothing else changed.</span></div></div>
+              <div class="tl"><time>11:30</time><div><b>Call with Meridian Partners</b><span>They asked to push 30 minutes. Confirmed, calendar updated.</span><br><span class="flagged">Flagged: overlaps lunch with your 1:1</span></div></div>
+              <div class="tl"><time>2:00</time><div><b>Open block</b><span>Held for the proposal review you mentioned Friday.</span></div></div>
+            </div>
+            <p class="foot"><b>Three things to know:</b> the deck is current, Meridian moved, and Thursday's flight confirmation is still pending from the airline.</p>
+          </div>
+        </article>
+        <article class="card sample reveal">
+          <div class="sample-label"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>Illustrative sample</div>
+          <div class="sample-inner">
+            <h4>Vendor Negotiation Summary</h4>
+            <p class="sub">Prepared for a quarterly ops review</p>
+            <div class="tbl-wrap"><table class="tbl">
+              <thead><tr><th>Vendor</th><th>Prior</th><th>Negotiated</th><th>Savings</th></tr></thead>
+              <tbody>
+                <tr><td>Harborview Catering</td><td>$4,200/event</td><td>$3,450/event</td><td class="save">18%</td></tr>
+                <tr><td>Metro Car Service</td><td>$0.92/mi</td><td>$0.78/mi</td><td class="save">15%</td></tr>
+                <tr><td>Quill &amp; Press Printing</td><td>$1,900/qtr</td><td>$1,520/qtr</td><td class="save">20%</td></tr>
+              </tbody>
+            </table></div>
+            <p class="foot">Renegotiated on contract renewal by bundling volume across three recurring vendors and benchmarking against two competing quotes each.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
+
+  <!-- HOW WE START -->
+  <section id="process">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 3l14 9-14 9z"/></svg>How we start</span>
+        <h2>From first call to <span class="hl">first hand-off</span></h2>
+        <p class="lede">No long onboarding. A clear scope, the right access, and a rhythm you can count on.</p>
+      </div>
+      <div class="engage">
+        <article class="card eng reveal"><div class="n">1</div><h3>Discovery call</h3><p>30 minutes on what's on your plate, what keeps slipping, and what you'd hand off first.</p><div class="out">You leave with: a short list of first delegations</div></article>
+        <article class="card eng reveal"><div class="n">2</div><h3>Scope</h3><p>Which option fits, monthly capacity, response times, on-site vs. remote, and what needs your approval.</p><div class="out">You get: a written scope before anything starts</div></article>
+        <article class="card eng reveal"><div class="n">3</div><h3>Access &amp; setup</h3><p>Calendar, inbox, and tool access set up with the permissions you choose, and nothing more.</p><div class="out">Sensitive info handled with care, by default</div></article>
+        <article class="card eng reveal"><div class="n">4</div><h3>Rhythm</h3><p>A predictable check-in cadence, a running list of open loops, and a brief so you're never chasing me.</p><div class="out">You know where everything stands</div></article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0"/></svg>Background</span>
+        <h2>Meet <span class="hl">Tre'Erica</span></h2>
+        <p class="lede">My experience spans executive support and corporate operations, so I'm equally comfortable managing the details and understanding the bigger picture they connect to.</p>
+      </div>
+      <div class="bg-grid">
+        <div class="stats">
+          <div class="card stat reveal"><b>50+</b><p><strong>Meetings coordinated weekly</strong>Across shifting schedules and competing priorities</p></div>
+          <div class="card stat reveal"><b>~10%</b><p><strong>Average annual vendor savings</strong>For freelance clients, through vendor management and renegotiation</p></div>
+          <div class="card stat reveal"><b>5+ yrs</b><p><strong>Supporting founders &amp; executives</strong>Special projects owned from planning through execution</p></div>
+        </div>
+        <div class="card roles reveal">
+          <div class="role">
+            <div class="role-top"><h3>Freelance Executive Assistant</h3><span class="when">Independent · Since 2020</span></div>
+            <p class="org">Founders &amp; executives</p>
+            <ul>
+              <li>Gatekeeper for busy founders: calendars, inboxes, and day-to-day priorities, handled with discretion and care for sensitive information.</li>
+              <li>Coordinate 50+ meetings per week across shifting schedules.</li>
+              <li>Source and negotiate with vendors; plan and run client events and travel from first idea through final logistics.</li>
+            </ul>
+          </div>
+          <div class="role">
+            <div class="role-top"><h3>Deloitte</h3><span class="when">2023 – present</span></div>
+            <p class="org">Senior Video Enabled Technology Coordinator · previously Senior One Team Ambassador</p>
+            <ul>
+              <li>Support business development: sourcing talent, drafting proposals, and coordinating outreach for client engagements.</li>
+              <li>Manage vendor relationships and logistics for internal programs, catching cost gaps before they become recurring losses.</li>
+              <li>Build decks, materials, and reporting that leadership uses to make decisions.</li>
+            </ul>
+          </div>
+          <div class="tools">
+            <small>Tools &amp; strengths</small>
+            <div class="tags"><span class="tag">Google Workspace</span><span class="tag">Slack</span><span class="tag">Canva</span><span class="tag">PowerPoint</span><span class="tag">Calendar &amp; inbox management</span><span class="tag">Vendor negotiation</span><span class="tag">Event &amp; travel logistics</span><span class="tag">Google Project Management (Coursera)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg></span></div>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><path d="M9.5 9a2.5 2.5 0 114 2c-1 .6-1.5 1.1-1.5 2.2M12 16.5h.01" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>FAQs</span>
+        <h2>Your questions, answered</h2>
+        <p class="lede">Everything you'd want to know before handing something off.</p>
+      </div>
+      <div class="faq">
+        <details class="reveal" open>
+          <summary>What does a “fractional” executive assistant mean?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p>You get experienced executive and project support for a defined share of the month, without hiring full-time. It's direct access to me, not a rotating team: the same person learns your priorities, your people, and how you like things done.</p>
+        </details>
+        <details class="reveal">
+          <summary>What's the difference between ongoing and project support?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p>Ongoing support is a monthly retainer for the daily load: calendar, inbox, travel, follow-ups. Project support is a scoped engagement for one thing with a clear finish line, like an event, venue search, or launch logistics. Many founders combine the two.</p>
+        </details>
+        <details class="reveal">
+          <summary>When am I available, and how fast do I respond?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p>Working hours and response expectations are agreed in your scope before we start, along with how urgent requests and extra work are handled. The promise is proactive ownership, with a rhythm you can rely on.</p>
+        </details>
+        <details class="reveal">
+          <summary>Can you support on-site in Atlanta?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p>Yes. I'm Atlanta-based and work remotely with founders anywhere. On-site support, such as event-day execution, is scoped and quoted alongside the rest of the engagement.</p>
+        </details>
+        <details class="reveal">
+          <summary>How do you handle confidential information?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p>Discretion is part of the job. I only use the access you grant, keep sensitive information out of shared or personal channels, and am happy to sign an NDA before we start.</p>
+        </details>
+        <details class="reveal">
+          <summary>What decisions do you make on my behalf?<span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+          <p>We decide that together during scoping. Typically I handle scheduling, logistics, and vendor back-and-forth on my own, and bring you anything involving spend over an agreed amount, commitments in your name, or a judgment call only you should make, with a recommendation attached.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" style="padding-top:20px;padding-bottom:0">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div>
+          <div class="mini-brand"><span class="logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><b style="color:#fff">Work With Tre</b><span class="sep"></span>Fractional executive &amp; project support</div>
+          <h2>Hand it off.<br>Keep it <span class="hl">moving.</span></h2>
+          <p class="l">If you have a lot going on at once and need a proactive right hand, not another person to manage, let's talk about what support could look like.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-light js-book" href="#contact">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg>
+              Book a discovery call <span class="aside">— 30 min</span>
+            </a>
+          </div>
+          <div class="checks">
+            <span><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff"/><path d="M7.5 12.5l3 3 6-6" stroke="#532CA9" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Leave with first delegations</span>
+            <span><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#fff"/><path d="M7.5 12.5l3 3 6-6" stroke="#532CA9" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>No commitment</span>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="ci"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></span><div><small>Email</small><a href="mailto:tre.ericaw@gmail.com">tre.ericaw@gmail.com</a></div><button class="copy" data-copy="tre.ericaw@gmail.com">Copy</button></div>
+          <div class="ci"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 006 6L16 13l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2"/></svg></span><div><small>Phone</small><a href="tel:+14045429932">404-542-9932</a></div><button class="copy" data-copy="404-542-9932">Copy</button></div>
+          <div class="ci"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.5c0-1.31-.02-3-1.83-3-1.83 0-2.11 1.43-2.11 2.9V21H9z"/></svg></span><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/tre-erica-wallace-" target="_blank" rel="noopener">tre-erica-wallace</a></div></div>
+          <div class="ci"><span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><small>Location</small><span class="v">Atlanta, GA · Remote-friendly</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap" style="position:relative;z-index:1">
+    <p class="ft-lead"><em>Tre</em> keeps it moving in…</p>
+    <div class="ft-tags">
+      <span class="on">Calendar</span><span>Inbox</span><span>Travel</span><span class="on">Vendors</span><span>Events</span><span>Launches</span><span>Research</span><span class="on">Decks</span><span>Merch</span><span>Project tracking</span><span>Workflows</span><span>Follow-ups</span>
+    </div>
+    <div class="ft-row">
+      <a class="brand" href="#top"><span class="logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="brand-name">Work With Tre<small>by TWES</small></span></a>
+      <p>Fractional executive assistant and project support for founders with too much in motion.</p>
+      <a class="ft-mail" href="mailto:tre.ericaw@gmail.com"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>tre.ericaw@gmail.com</a>
+    </div>
+    <div class="ft-links">
+      <div><h5>Services</h5><a href="#services">Ongoing support</a><a href="#services">Executive + project</a><a href="#services">Special projects</a></div>
+      <div><h5>The work</h5><a href="#work">Real stories</a><a href="#work">Illustrative samples</a><a href="#how">How I work</a></div>
+      <div><h5>Start</h5><a href="#process">How we start</a><a href="#faq">FAQ</a><a href="#contact" class="js-book">Book a call</a></div>
+    </div>
+    <div class="ft-bottom"><span>© <span id="yr">2026</span> TWES · Tre'Erica Wallace. All rights reserved.</span><span>Atlanta, GA</span></div>
+  </div>
+  <div class="wordmark" aria-hidden="true">✦ TWES</div>
+</footer>
+
+<script>
+  // Set to Tre's scheduling link (Calendly, Google Calendar booking page, etc.).
+  // Until it's set, "Book a call" buttons open an email with a pre-filled subject.
+  const BOOKING_URL = "";
+
+  const fallback = "mailto:tre.ericaw@gmail.com?subject=" + encodeURIComponent("Discovery call request");
+  document.querySelectorAll(".js-book").forEach(a => {
+    a.href = BOOKING_URL || fallback;
+    if (BOOKING_URL) { a.target = "_blank"; a.rel = "noopener"; }
+  });
+
+  document.querySelectorAll(".copy").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(btn.dataset.copy); btn.textContent = "Copied"; }
+      catch { btn.textContent = "Press ⌘C"; }
+      setTimeout(() => btn.textContent = "Copy", 1600);
+    });
+  });
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  const els = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    }), { rootMargin: "0px 0px -8% 0px" });
+    els.forEach(el => io.observe(el));
+  } else {
+    els.forEach(el => el.classList.add("in"));
+  }
+</script>
+</body>
+</html>
